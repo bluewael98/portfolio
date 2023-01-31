@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {background: rgb(174,198,207);
+  background: -moz-linear-gradient(90deg, rgba(174,198,207,1) 0%, rgba(170,169,255,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(174,198,207,1) 0%, rgba(170,169,255,1) 100%);
+  background: linear-gradient(90deg, rgba(174,198,207,1) 0%, rgba(170,169,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aec6cf",endColorstr="#aaa9ff",GradientType=1);
+  @apply text-black;
+}
