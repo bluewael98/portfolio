@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Capture from "../assets/Capture.JPG";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dashboardphoto from "../assets/dashboardphoto.JPG";
@@ -43,7 +42,11 @@ export default class Carousel extends Component {
                 >
                   Repo
                 </button>
-                <img src={github} className="z-30 absolute right-3 top-2 " />
+                <img
+                  src={github}
+                  className="z-30 absolute right-3 top-2 "
+                  alt="github"
+                />
               </div>
               <button className="absolute bg-white px-[3rem] py-[0.5rem] rounded-full z-30 bottom-24 font-bold">
                 View on WEB
@@ -51,6 +54,7 @@ export default class Carousel extends Component {
               <img
                 className="rounded-full group w-[300px] h-[300px] mx-auto translate-y-5 cursor-pointer object-cover  "
                 src={dashboardphoto}
+                alt="dashboardproject"
               />
             </div>
           </div>
@@ -74,7 +78,11 @@ export default class Carousel extends Component {
                 >
                   Repo
                 </button>
-                <img src={github} className="z-30 absolute right-3 top-2 " />
+                <img
+                  src={github}
+                  className="z-30 absolute right-3 top-2 "
+                  alt="github"
+                />
               </div>
               <button className="absolute bg-white px-[3rem] py-[0.5rem] rounded-full z-30 bottom-24 font-bold">
                 View on WEB
@@ -82,6 +90,7 @@ export default class Carousel extends Component {
               <img
                 className="rounded-full group w-[300px] h-[300px] mx-auto translate-y-5 cursor-pointer object-cover "
                 src={portfoliophoto}
+                alt="portfolioproject"
               />
             </div>
           </div>

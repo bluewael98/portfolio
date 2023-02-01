@@ -7,8 +7,8 @@ const Projects = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1050px)");
 
   return (
-    <section id="projects" className="pt-10 pb-24">
-      <div className="flex flex-col justify-center items-center mx-auto mt-32">
+    <section id="projects" className="pt-10 mb-25 h-auto">
+      <div className="flex flex-col justify-center items-center mx-auto py-48">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -21,15 +21,14 @@ const Projects = () => {
           }}
         >
           <div className="flex flex-col items-center justify-center">
-            <p className="font-playfair font-semibold text-4xl mb-5">
+            <h1 className="font-playfair font-semibold text-4xl mb-5">
               MY PROJECTS
-            </p>
+            </h1>
           </div>
         </motion.div>
 
         {isAboveLarge ? <HoverDrawer /> : <Carousel />}
       </div>
-      <div className="container mx-auto">{/* <Carousel /> */}</div>
     </section>
   );
 };

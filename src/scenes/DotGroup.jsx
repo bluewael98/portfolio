@@ -1,4 +1,4 @@
-import AnchorLink from "react-anchor-link-smooth-scroll"
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const DotGroup = ({ selectedPage, setSelectedPage }) => {
   const selectedStyles = `relative bg-secondary before:absolute before:w-6 before:h-6
@@ -7,51 +7,48 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
 
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7">
-          <AnchorLink
-      className={`${
-        selectedPage === 'home' ? selectedStyles : "bg-secondary" }
+      <AnchorLink
+        className={`${
+          selectedPage === "home" ? selectedStyles : "bg-background"
+        }
       w-3 h-3 rounded-full`}
-      href="#home"
-      onClick={() => setSelectedPage('home')}
-    />
-              <AnchorLink
-      className={`${
-        selectedPage === 'about me' ? selectedStyles : "bg-secondary" }
+        href="#home"
+        onClick={() => setSelectedPage("home")}
+      />
+      <AnchorLink
+        className={`${
+          selectedPage === "about me" ? selectedStyles : "bg-background"
+        }
       w-3 h-3 rounded-full`}
-      href="#about me"
-      onClick={() => setSelectedPage('about me')}
-    />
-              <AnchorLink
-      className={`${
-        selectedPage === 'skills' ? selectedStyles : "bg-secondary" }
+        href="#about me"
+        onClick={() => setSelectedPage("about me")}
+      />
+      <AnchorLink
+        className={`${
+          selectedPage === "skills" ? selectedStyles : "bg-background"
+        }
       w-3 h-3 rounded-full`}
-      href="#skills"
-      onClick={() => setSelectedPage('skills')}
-    />
-              <AnchorLink
-      className={`${
-        selectedPage === 'projects' ? selectedStyles : "bg-secondary" }
+        href="#skills"
+        onClick={() => setSelectedPage("skills")}
+      />
+      <AnchorLink
+        className={`${
+          selectedPage === "projects" ? selectedStyles : "bg-background"
+        }
       w-3 h-3 rounded-full`}
-      href="#projects"
-      onClick={() => setSelectedPage('projects')}
-    />
-              <AnchorLink
-      className={`${
-        selectedPage === 'experience' ? selectedStyles : "bg-secondary" }
+        href="#projects"
+        onClick={() => setSelectedPage("projects")}
+      />
+      <AnchorLink
+        className={`${
+          selectedPage === "contact" ? selectedStyles : "bg-background"
+        }
       w-3 h-3 rounded-full`}
-      href="#experience"
-      onClick={() => setSelectedPage('experience')}
-    />
-              <AnchorLink
-      className={`${
-        selectedPage === 'contact' ? selectedStyles : "bg-secondary" }
-      w-3 h-3 rounded-full`}
-      href="#contact"
-      onClick={() => setSelectedPage('contact')}
-    />
+        href="#contact"
+        onClick={() => setSelectedPage("contact")}
+      />
     </div>
-  )
+  );
+};
 
-}
-
-export default DotGroup
+export default DotGroup;

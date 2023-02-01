@@ -7,6 +7,8 @@ import Landing from "./scenes/Landing"
 import AboutMe from "./scenes/AboutMe";
 import Skills from "./scenes/Skills";
 import Projects from "./scenes/Projects"
+import Contact from "./scenes/Contact";
+import Footer from "./scenes/Footer";
 
 
 
@@ -56,7 +58,7 @@ function App() {
         <motion.div 
         margin="0 0 -200px 0"
         amount="all"
-        onViewportEnter={() => setSelectedPage("AboutMe")}>
+        onViewportEnter={() => setSelectedPage("about me")}>
           
           <AboutMe />
         </motion.div>
@@ -81,7 +83,18 @@ function App() {
         </motion.div> 
         </div>
 
+        <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+         margin="0 0 -200px 0"
+         amount="all"
+         onViewportEnter={()=> setSelectedPage("contact")}
+         >
+          <Contact />
+        </motion.div> 
+        
+        </div>
 
+        <Footer />
     </div>
   );
 }
