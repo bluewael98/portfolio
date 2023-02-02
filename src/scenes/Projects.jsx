@@ -4,11 +4,11 @@ import Carousel from "../components/Carousel";
 import HoverDrawer from "../components/HoverDrawer";
 
 const Projects = () => {
-  const isAboveLarge = useMediaQuery("(min-width: 1050px)");
+  const isAboveLarge = useMediaQuery("(min-width: 1440px)");
 
   return (
-    <section id="projects" className="pt-10 mb-25 h-auto">
-      <div className="flex flex-col justify-center items-center mx-auto py-48">
+    <section id="projects" className="pt-28 pb-25">
+      <div className="flex flex-col justify-center items-center mx-auto">
         <motion.div
           className="md:w-1/3"
           initial="hidden"

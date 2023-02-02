@@ -25,7 +25,7 @@ const Skills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="flex flex-col items-center justify-center ">
+          <div className="flex flex-col items-center justify-center xxs:w-[300px] sm:w-auto ">
             <p className="font-playfair font-semibold md:text-4xl md:mb-5 mx-auto text-2xl">
               MY <span>SKILLS</span>
             </p>
@@ -95,7 +95,7 @@ const Skills = () => {
         <div className="flex flex-col items-center mx-auto">
           {/* TECH SKILLS SMALLER SCREEN */}
 
-          <div className="flex flex-col items-center justify-center mt-20 mx-auto">
+          <div className="flex flex-col items-center justify-center mt-20 mx-auto xxs:w-[300px] sm:w-auto ">
             <p className="font-playfair font-semibold text-2xl mb-5">
               <span>TECHNICAL SKILLS</span>
             </p>
@@ -107,7 +107,7 @@ const Skills = () => {
           </div>
 
           {/* SOFT SKILLS SMALLER SCREEN */}
-          <div className="flex flex-col items-center justify-center mt-20 mx-auto ">
+          <div className="flex flex-col items-center justify-center mt-20 mx-auto xxs:w-[300px] sm:w-auto ">
             <p className="font-playfair font-semibold text-2xl mb-5">
               <span>SOFT SKILLS</span>
             </p>

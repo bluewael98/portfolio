@@ -31,10 +31,10 @@ const Contact = () => {
         }}
       >
         <div className="flex flex-col items-center">
-          <p className="font-playfair font-semibold text-4xl mb-5 text-black">
+          <p className="font-playfair font-semibold xxs:text-2xl md:text-4xl mb-5 text-black">
             CONTACT ME TO GET STARTED
           </p>
-          <p className="font-playfair text-2xl mb-5 text-black">
+          <p className="font-playfair xxs:text-2xl md:text-4xl xxs:w-[300px] ss:w-auto mb-5 text-black">
             Lets embark on this journey and create something spectacular,
             together.
           </p>
@@ -45,7 +45,7 @@ const Contact = () => {
       {/* FORM */}
       <div className="md: flex justify-center gap-16 mt-5">
         <motion.div
-          className="basis-1/2 mt-10 md:mt-0"
+          className="mt-10 md:mt-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

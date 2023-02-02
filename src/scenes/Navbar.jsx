@@ -4,6 +4,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import waellogo from "../assets/waellogo.png";
+import { motion } from "framer-motion";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
@@ -18,6 +19,11 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
       {page}
     </AnchorLink>
   );
+};
+
+const variants = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
 };
 
 const Navbar = ({ isTopOfPage, selctedPage, setSelectedPage }) => {
@@ -79,7 +85,12 @@ const Navbar = ({ isTopOfPage, selctedPage, setSelectedPage }) => {
 
         {/* MOBILE MENU POPUP */}
         {!isDesktop && isMenuToggled && (
-          <div className="fixed right-0 top-0 bottom-0 height[100%] bg-secondary p-2 w-[300px]">
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            className="fixed right-0 top-0 bottom-0 height[100%] bg-secondary p-2 w-[300px] transition-500"
+          >
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -88,6 +99,7 @@ const Navbar = ({ isTopOfPage, selctedPage, setSelectedPage }) => {
             </div>
 
             {/* MENU ITEMS */}
+
             <div className="flex flex-col gap-10 ml-[33%] text-2xl">
               <Link
                 page="Home"
@@ -115,7 +127,7 @@ const Navbar = ({ isTopOfPage, selctedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     </nav>
