@@ -26,7 +26,7 @@ module.exports = {
         opensans: ["Open Sans", "sans-serif"],
       },
       screens: {
-        xxs: "400px",
+        xxs: "370px",
         xs: "480px",
         ss: "620px",
         sm: "768px",
