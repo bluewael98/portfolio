@@ -66,7 +66,6 @@ const Skills = () => {
           </motion.div>
 
           <motion.div
-            lassName="md:w-1/3"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -94,41 +93,57 @@ const Skills = () => {
       ) : (
         <div className="flex flex-col items-center mx-auto">
           {/* TECH SKILLS SMALLER SCREEN */}
-
-          <div className="flex flex-col xxs:items-start sm:items-center justify-center mt-20 mx-auto sm:w-auto ">
-            <p className="font-playfair font-semibold text-2xl mb-5">
-              <span>TECHNICAL SKILLS</span>
-            </p>
-            <p className="mt-1">
-              Proficient in JavaScript. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;&nbsp;
-            </p>
-            <p className="mt-[5px]">Proficient in React.js.</p>
-            <p className="mt-[5px]">Experience with Node.js & Express.js. </p>
-            <p className="mt-[5px]">Familiar with Mongo DB management.</p>
-            <p className="mt-[5px]">Familiar with Git.</p>
-          </div>
-
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <div className="flex flex-col xxs:items-start sm:items-center  xxs:mr-[30px] sm:mr-auto justify-center mt-20 sm:mx-auto sm:w-auto ">
+              <p className="font-playfair font-semibold text-2xl mb-5">
+                <span>TECHNICAL SKILLS</span>
+              </p>
+              <p className="mt-1">Proficient in JavaScript.</p>
+              <p className="mt-[5px]">Proficient in React.js.</p>
+              <p className="mt-[5px]">Experience with Node.js & Express.js. </p>
+              <p className="mt-[5px]">Familiar with Mongo DB management.</p>
+              <p className="mt-[5px]">Familiar with Git.</p>
+            </div>
+          </motion.div>
           {/* SOFT SKILLS SMALLER SCREEN */}
-          <div className="flex flex-col xxs:items-start sm:items-center justify-center mt-20 mx-auto xxs:w-[300px] sm:w-auto ">
-            <p className="font-playfair font-semibold text-2xl mb-5">
-              <span>SOFT SKILLS</span>
-            </p>
-            <p className="mt-1">
-              A strong work ethic that has consistently led to exceptional
-              performance in all job duties.
-            </p>
-            <p className="mt-[5px]">
-              Excel very well in both a team and independant.
-            </p>
-            <p className="mt-[5px]">
-              Strong problem-solving and analytical skills.{" "}
-            </p>
-            <p className="mt-[5px]">
-              Excellent communication & organization skills.
-            </p>
-          </div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <div className="flex flex-col xxs:items-start sm:items-center justify-center mt-20 mx-auto xxs:w-[300px] sm:w-auto ">
+              <p className="font-playfair font-semibold text-2xl mb-5">
+                <span>SOFT SKILLS</span>
+              </p>
+              <p className="mt-1">
+                A strong work ethic that has consistently led to exceptional
+                performance in all job duties.
+              </p>
+              <p className="mt-[5px]">
+                Excel very well in both a team and independant.
+              </p>
+              <p className="mt-[5px]">
+                Strong problem-solving and analytical skills.{" "}
+              </p>
+              <p className="mt-[5px]">
+                Excellent communication & organization skills.
+              </p>
+            </div>
+          </motion.div>
         </div>
       )}
 
