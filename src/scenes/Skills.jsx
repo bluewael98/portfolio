@@ -25,7 +25,7 @@ const Skills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="flex flex-col items-center justify-center xxs:w-[300px] sm:w-auto ">
+          <div className="flex flex-col xxs:items-start sm:items-center justify-center xxs:w-[300px] sm:w-auto ">
             <p className="font-playfair font-semibold md:text-4xl md:mb-5 mx-auto text-2xl">
               MY <span>SKILLS</span>
             </p>
@@ -33,7 +33,7 @@ const Skills = () => {
               A list of my current skills which I belive will provide value to
               you.
             </p>
-            <p className="">Not limited, and continously learning..</p>
+            <p className="mt-[5px]">Not limited, and continously learning..</p>
           </div>
         </motion.div>
       </div>
@@ -95,19 +95,19 @@ const Skills = () => {
         <div className="flex flex-col items-center mx-auto">
           {/* TECH SKILLS SMALLER SCREEN */}
 
-          <div className="flex flex-col items-center justify-center mt-20 mx-auto xxs:w-[300px] sm:w-auto ">
+          <div className="flex flex-col xxs:items-start sm:items-center justify-center mt-20 mx-auto sm:w-auto ">
             <p className="font-playfair font-semibold text-2xl mb-5">
               <span>TECHNICAL SKILLS</span>
             </p>
             <p className="mt-1">Proficient in JavaScript.</p>
-            <p>Proficient in React.js.</p>
-            <p>Experience with Node.js & Express.js. </p>
-            <p>Familiar with Mongo DB management.</p>
-            <p>Familiar with Git.</p>
+            <p className="mt-[5px]">Proficient in React.js.</p>
+            <p className="mt-[5px]">Experience with Node.js & Express.js. </p>
+            <p className="mt-[5px]">Familiar with Mongo DB management.</p>
+            <p className="mt-[5px]">Familiar with Git.</p>
           </div>
 
           {/* SOFT SKILLS SMALLER SCREEN */}
-          <div className="flex flex-col items-center justify-center mt-20 mx-auto xxs:w-[300px] sm:w-auto ">
+          <div className="flex flex-col xxs:items-start sm:items-center justify-center mt-20 mx-auto xxs:w-[300px] sm:w-auto ">
             <p className="font-playfair font-semibold text-2xl mb-5">
               <span>SOFT SKILLS</span>
             </p>
@@ -115,9 +115,15 @@ const Skills = () => {
               A strong work ethic that has consistently led to exceptional
               performance in all job duties.
             </p>
-            <p>Excel very well in both a team and independant. </p>
-            <p>Strong problem-solving and analytical skills. </p>
-            <p>Excellent communication & organization skills.</p>
+            <p className="mt-[5px]">
+              Excel very well in both a team and independant.
+            </p>
+            <p className="mt-[5px]">
+              Strong problem-solving and analytical skills.{" "}
+            </p>
+            <p className="mt-[5px]">
+              Excellent communication & organization skills.
+            </p>
           </div>
         </div>
       )}
