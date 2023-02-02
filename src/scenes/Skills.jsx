@@ -26,7 +26,7 @@ const Skills = () => {
           }}
         >
           <div className="flex flex-col xxs:items-start sm:items-center justify-center xxs:w-[300px] sm:w-auto ">
-            <p className="font-playfair font-semibold md:text-4xl md:mb-5 mx-auto text-2xl">
+            <p className="font-playfair font-semibold md:text-4xl md:mb-5 text-2xl">
               MY <span>SKILLS</span>
             </p>
             <p className="mt-10 mx-auto">
@@ -99,7 +99,11 @@ const Skills = () => {
             <p className="font-playfair font-semibold text-2xl mb-5">
               <span>TECHNICAL SKILLS</span>
             </p>
-            <p className="mt-1">Proficient in JavaScript.</p>
+            <p className="mt-1">
+              Proficient in JavaScript. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;&nbsp;
+            </p>
             <p className="mt-[5px]">Proficient in React.js.</p>
             <p className="mt-[5px]">Experience with Node.js & Express.js. </p>
             <p className="mt-[5px]">Familiar with Mongo DB management.</p>
