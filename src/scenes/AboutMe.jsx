@@ -35,7 +35,7 @@ const AboutMe = () => {
               <p className="leading-6 md:leading-8 md:mt-7 mt-3">
                 I live my life on the basis that anything is achievable, with
                 hard work and consistency. With that being said, I recently
-                decided to take the red pill and endavour into my journey
+                decided to take the red pill and endeavour into my journey
                 through the world of Software Engineering. I've since found a
                 home, a career which I fell in love with, and a goal to become
                 the most valuable Software Engineer I can be.

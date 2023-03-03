@@ -73,7 +73,10 @@ export default class Carousel extends Component {
                 <button
                   className="absolute bg-white px-[3rem] py-[0.5rem] rounded-full z-30 font-bold"
                   onClick={() =>
-                    window.open("https://wael-mern-app.onrender.com", "_blank")
+                    window.open(
+                      "https://github.com/bluewael98/portfolio",
+                      "_blank"
+                    )
                   }
                 >
                   Repo
@@ -84,9 +87,6 @@ export default class Carousel extends Component {
                   alt="github"
                 />
               </div>
-              <button className="absolute bg-white px-[3rem] py-[0.5rem] rounded-full z-30 bottom-24 font-bold">
-                View on WEB
-              </button>
               <img
                 className="rounded-full group w-[300px] h-[300px] mx-auto translate-y-5 cursor-pointer object-cover "
                 src={portfoliophoto}
